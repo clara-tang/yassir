@@ -17,7 +17,7 @@ public struct Service {
             httpMethod: .get,
             base: .allMovie,
             path: "/3/discover/movie",
-            queryItems: ["api_key": "c9856d0cb57c3f14bf75bdc6c063b8f3"]
+            queryItems: [:]
         )
         request(configs) { result in
             completion(result)
@@ -32,7 +32,7 @@ public struct Service {
             httpMethod: .get,
             base: .allMovie,
             path: "/3/movie/\(id)",
-            queryItems: ["api_key": "c9856d0cb57c3f14bf75bdc6c063b8f3"]
+            queryItems: [:]
         )
         
         request(configs) { result in
